@@ -1,0 +1,60 @@
+.feedbackContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.type {
+  margin-bottom: 10rpx;
+}
+
+.type image {
+  color: black;
+  vertical-align: middle;
+  width:20px;
+  height: 20px;
+  margin: 0 10rpx;
+}
+
+.type text {
+  font-size: 28rpx
+}
+
+.feedbackPicker {
+  width: 60%;
+  padding-left: 20%
+}
+
+.hr {
+  width: 100%;
+  height: 1rpx;
+  background: #eee;
+  z-index: -1;
+  margin-top: 20rpx
+}
+
+textarea {
+  background: #eee;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20rpx;
+  border: 1rpx solid #489B81;
+  border-radius: 10rpx
+}
+
+.uploadImg{
+  display: flex
+}
+
+.upload {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.formButton {
+  display: flex
+}
+
+.submitButton {
+  margin-top: 20rpx;
+  width: 30%
+}

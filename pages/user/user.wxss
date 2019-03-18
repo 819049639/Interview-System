@@ -1,0 +1,74 @@
+@import '../../app.wxss';
+
+.userContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.userContainer button {
+  margin-top: 50rpx;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40rpx;
+}
+
+.userInfo text {
+  color: black;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.interviewInfo {
+  display: flex;
+  width: 100%;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33%;
+  margin-top: 90rpx;
+}
+
+.buttom {
+  font-size: 28rpx;
+}
+
+.hr {
+  width: 100%;
+  height: 10rpx;
+  background: #eee;
+  z-index: -1;
+  margin-top: 20rpx
+}
+
+.items {
+  width: 100%
+}
+
+.item {
+  width: 90%;
+}
+
+.item-left-icon {
+  float: left;
+  margin-left: -50%
+}
+
+.item-right-icon {
+  float: right;
+  margin-left: 40%;
+  padding-left: -50%
+}

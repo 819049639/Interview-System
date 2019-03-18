@@ -1,0 +1,64 @@
+<view class='userContainer'>
+
+  <view class='userInfo'>
+    <button class='weui-btn' type="primary" plain="true" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <view class='interviewInfo weui-flex' wx:if='{{hasUserInfo}}'>
+    <navigator url="" class='detail weui-flex__item' hover-class="weui-cell_active">
+      <text class='top'>0</text>
+      <text class='buttom'>面试记录</text>
+    </navigator>
+    <navigator url="" class='detail weui-flex__item' hover-class="weui-cell_active">
+      <text class='top'>0</text>
+      <text class='buttom'>面试题</text>
+    </navigator>
+    <navigator url="" class='detail weui-flex__item' hover-class="weui-cell_active">
+      <text class='top'>0</text>
+      <text class='buttom'>面试情况</text>
+    </navigator>
+  </view>
+
+  <view class='hr'></view>
+
+  <view class='items'>
+
+    <navigator wx:if='{{hasUserInfo}}' url="" class="weui-cell weui-cell_access item" hover-class="weui-cell_active">
+      <view class="weui-cell__bd">
+        <image src="/images/items/user.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+        个人信息
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+
+    <navigator url="" class="weui-cell weui-cell_access item" hover-class="weui-cell_active">
+      <view class="weui-cell__bd">
+        <image src="/images/items/guide.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+        使用指南
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+
+    <navigator wx:if='{{hasUserInfo}}' url="../feedback/feedback" class="weui-cell weui-cell_access item" hover-class="weui-cell_active">
+      <view class="weui-cell__bd">
+        <image src="/images/items/feedback.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+        意见反馈
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+
+    <navigator url="" class="weui-cell weui-cell_access item" hover-class="weui-cell_active">
+      <view class="weui-cell__bd">
+        <image src="/images/items/setting.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+        设置
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+    </navigator>
+
+  </view>
+
+</view>
