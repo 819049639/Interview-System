@@ -17,6 +17,11 @@ Page({
       url: '../logs/logs'
     })
   },
+  bindNickname: function() {
+    wx.navigateTo({
+      url: '../userInfoPage/userInfoPage',
+    })
+  },
   onLoad: function() {
     if (app.globalData.userInfo) {
       this.setData({
@@ -66,5 +71,13 @@ Page({
       }
     })
 
-  }
+  },
+  previewImage: function(e) {
+    let urlArr = []
+    urlArr.push(this.data.userInfo.avatarUrl)
+    wx.previewImage({
+      current: e.currentTarget.id, // 当前显示图片的http链接
+      urls: urlArr // 需要预览的图片http链接列表
+    })
+  },
 })

@@ -3,7 +3,10 @@
     "pages/user/user",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/feedback/feedback"
+    "pages/feedback/feedback",
+    "pages/userInfoPage/userInfoPage",
+    "pages/guide/guide",
+    "pages/settings/settings"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,6 +15,11 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
+
+    "color": "#000",
+    "selectedColor": "#489B81",
+    "backgroundColor": "#fff",
+
     "list": [
       {
         "text": "首页",
